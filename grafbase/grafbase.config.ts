@@ -23,6 +23,11 @@ const project = g.model("Project", {
   createdBy: g.relation(() => user),
 });
 
+const anything = g.model("Any", {
+  title: g.string(),
+  description: g.string(),
+});
+
 export default config({
   schema: g,
   // Integrate Auth
